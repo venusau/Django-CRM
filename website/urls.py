@@ -9,6 +9,9 @@ urlpatterns = [
     path('logout/', views.logout_user, name='logout'),
     path('register/', views.register_user, name='register'),
     path('record/<int:pk>/', views.customer_record, name='record'),
+    path('delete_record/<int:pk>', views.delete_record, name='delete_record'),
+    path('add_record', views.add_record, name='add_record'),
+    path('update/<int:pk>', views.update, name='update'),
     #CHANGES made over here 
     #added the home page path '' looks in the views.py file for home as the name home 
 ]
